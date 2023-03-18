@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="AssignmentProject_DOTNET.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!-- This is for common CSS-->
+        <style type="text/css">
+
+             .header {
+                text-align: center;
+            }
+            #Footer {
+                    position: fixed;
+                    bottom: 0px;
+           }
+            .footer {
+                text-align: center;
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+        <div class="bodywrap">
+            <div class="header">
+            <h1 class="design">Placement Eligibility Checking System</h1>
+            </div>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                </asp:ContentPlaceHolder>
+            </div>
+        
+            <div id="Footer" class="footer"> All Rights Reserved By Jainish Devendra and Kandarp &copy; 2022 </div>
+
+        </div>
+
+    </form>
+</body>
+</html>
